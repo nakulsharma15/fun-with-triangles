@@ -83,6 +83,7 @@ main h1 {
 
 .btn-check {
   background: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
   border: none;
   color: whitesmoke;
   padding: 0.7rem 1rem;
