@@ -8,12 +8,17 @@ function calculateSumOfSquare(a, b) {
 }
 
 function calculateHypotenuse() {
+
+  if(sides[0].value && sides[1].value) {
   const sumOfSquares = calculateSumOfSquare(
     Number(sides[0].value),
     Number(sides[1].value)
   );
   const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
   outputEl.innerText = "The length of hypotenuse is " + lengthOfHypotenuse;
+  }
+  else {
+    outputEl.innerText = "Please enter all the fields!"
+  }
 }
-
 calculateBtn.addEventListener("click", calculateHypotenuse);
