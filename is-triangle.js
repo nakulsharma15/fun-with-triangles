@@ -9,7 +9,11 @@ function sumOfAngles(angle1, angle2, angle3) {
 
 function isTriangle() {
 
-    if(inputs[0].value && inputs[1].value && inputs[2].value) {
+  if(inputs[0].value < 0 || inputs[1].value < 0 || inputs[2].value < 0) {
+    outputEl.innerText = "Please Do Not Enter Negative Values!";
+  }
+
+    else if(inputs[0].value && inputs[1].value && inputs[2].value) {
   const sum = sumOfAngles(
     Number(inputs[0].value),
     Number(inputs[1].value),
